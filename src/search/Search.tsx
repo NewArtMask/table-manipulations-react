@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 
 import Style from "./Search.module.css";
-import { getPredication } from "../../back-end/server";
+import { getPredication } from "./../back-end/server";
 
 const Search = ({ filter }: { filter: (searchData: string) => void }) => {
   const [predictions, setPredictions] = useState([] as string[]);

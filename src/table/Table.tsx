@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 
 import Style from "./Table.module.css";
-import { TableData, TableTitles, SortOrder } from "../../bll/interfaces";
+import { TableData, TableTitles, SortOrder } from "./../bll/interfaces";
 import {
   tableSortService,
   initTableDataCopy,
   capitalizeFirstLetter
-} from "../../bll/services";
+} from "./../bll/services";
 
 const Table = ({ data }: { data: TableData[] }) => {
   const [activeColumn, setActiveColumn] = useState("name" as TableTitles);

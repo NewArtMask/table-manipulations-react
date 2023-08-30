@@ -4,8 +4,8 @@ import "./styles.css";
 import Search from "./search/Search";
 import Table from "./table/Table";
 import Pagination from "./paginator/Pagination";
-import { TableData } from "../bll/interfaces";
-import { getTableData } from "../back-end/server";
+import { TableData } from "./bll/interfaces";
+import { getTableData } from "./back-end/server";
 
 export default function App() {
   const [tableData, setTableData] = useState(

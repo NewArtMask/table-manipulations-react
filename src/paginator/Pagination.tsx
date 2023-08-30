@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 
 import Style from "./Pagination.module.css";
-import { toSequence } from "../../bll/services";
-import { getTableData } from "../../back-end/server";
+import { toSequence } from "./../bll/services";
+import { getTableData } from "./../back-end/server";
 
 const Pagination = ({
   startPage,
@@ -33,9 +33,8 @@ const Pagination = ({
       {pages > 0 &&
         toSequence(pages).map((page) => (
           <div
-            className={`${Style.page} ${
-              page === currentPage ? Style.active : ""
-            }`}
+            className={`${Style.page} ${page === currentPage ? Style.active : ""
+              }`}
             key={page}
             onClick={() => getPage(page)}
           >
