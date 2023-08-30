@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Style from "./Pagination.module.css";
 import { toSequence } from "./../bll/services";
 import { getTableData } from "./../back-end/server";
+import { TableData } from "../bll/interfaces";
 
 const Pagination = ({
   startPage,
@@ -12,7 +13,7 @@ const Pagination = ({
   startPage: number;
   pages: number;
   setTableData: React.Dispatch<
-    React.SetStateAction<{ pageAmount: number; data: any[] }>
+    React.SetStateAction<{ page: number; pageAmount: number; data: TableData[] }>
   >;
 }) => {
   const [currentPage, setCurrentPage] = useState(1);
