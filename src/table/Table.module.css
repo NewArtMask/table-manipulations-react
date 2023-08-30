@@ -1,0 +1,18 @@
+.table {
+  border: solid 1px;
+  margin-top: 1rem;
+}
+
+.table tr {
+  display: grid;
+  grid-template-columns: 2em repeat(4, 1fr);
+}
+
+.table td,
+.table th {
+  border: solid 1px;
+}
+
+.columnTitle {
+  cursor: pointer;
+}

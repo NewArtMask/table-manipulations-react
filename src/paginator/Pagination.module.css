@@ -1,0 +1,20 @@
+.paginator {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  .page {
+    cursor: pointer;
+  }
+
+  .page:hover {
+    font-weight: 600;
+  }
+
+  .active {
+    font-weight: bolder;
+  }
+}
