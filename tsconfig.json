@@ -1,6 +1,8 @@
 {
     "include": [
         "./src/**/*",
+        "./back-end/**/*",
+        "./bll/**/*",
         "./module.css.d.ts"
     ],
     "compilerOptions": {
